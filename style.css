@@ -1,0 +1,135 @@
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --gradient-1: 	hsl(215, 20%, 17%);
+    --gradient-2: 	hsl(216, 24%, 12%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Overpass', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    height: 100%;
+    width: 100%;
+}
+h1 {
+    font-size: 28px;
+    line-height: auto;
+}
+h2 {
+    font-size: 15px;
+    line-height: auto;
+}
+.rating {
+    font-size: 16px;
+    line-height: 24px;
+}
+.body-text {
+    font-size: 15px;
+    line-height: 24px;
+}
+.white {
+    color: var(--white);
+}
+.light-grey {
+    color: var(--light-grey);
+}
+
+
+
+
+
+.home {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--very-dark-blue);
+}
+.main-box {
+    position: relative;
+    border-radius: 30px;
+    width: 412px;
+    height: 412px;
+    background-image: radial-gradient(var(--gradient-1), var(--gradient-2));
+}
+
+
+
+
+.main-heading {
+    position: absolute;
+    left: 32px;
+    top:110px;
+}
+.rating-list {
+    display: flex;
+
+
+    justify-content: space-between;
+
+    width: 341px;
+
+    position: absolute;
+    left: 32px;
+    top: 256px;
+}
+.rating-list > p {
+    border-radius: 50%;
+    width: 51px;
+    height: 51px;
+
+    background-color: var(--dark-blue);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--light-grey);
+}
+.star-box {
+
+    display: grid;
+    place-content: center;
+
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    background-color: var(--dark-blue);
+}
+.main-description {
+    position: absolute;
+    top: 160px;
+    left: 32px;
+    
+    width: 340px;
+}
+.submit-button {
+    position: absolute;
+    top: 339px;
+    left: 32px;
+
+    width: 341px;
+    height: 45px;
+
+    border-radius: 22.5px;
+    background-color: var(--orange);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
